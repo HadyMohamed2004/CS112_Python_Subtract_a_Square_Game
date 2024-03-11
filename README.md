@@ -8,7 +8,7 @@ This program is written in Python. To run the game, you need a Python compiler. 
 
 ## Usage
 
-Compile the program using a C++ compiler and run the executable. Follow the on-screen instructions to play the game.
+Compile the program using a Python compiler and run the executable. Follow the on-screen instructions to play the game.
 
 ## Functionality
 
