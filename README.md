@@ -4,7 +4,7 @@ Subtract a Square is a two-player mathematical game of strategy. Players take tu
 
 ## Installation
 
-This program is written in C++. To run the game, you need a C++ compiler. No additional dependencies are required.
+This program is written in Python. To run the game, you need a Python compiler. No additional dependencies are required.
 
 ## Usage
 
