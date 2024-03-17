@@ -17,13 +17,11 @@ Game 3, Task 2, Assignment 1 --> Subtract a square
 
 
 # Check if square of the number is a non-zero positive number and its square is less than remaining coins
-def check_square(num, coins):
+def is_square(num, coins):
     if num <= 0:  # if 0 is entered --> Invalid
         return False
-    elif (num * num) >= coins and num != 1:  # if square is greater than remaining coins and n is not 1 --> Invalid
-        return False
-    else:  # if square is less than remaining coins or n is 1 --> Valid
-        return True
+    return num ** 0.5 == int(num ** 0.5) and num <= coins
+
 
 
 # Function to Check if User Input is an Integer
@@ -69,13 +67,13 @@ while True:
     # Prompt User to enter an Integer and Check if it's valid (non-zero, its square is less than remaining coins and it's ok to be 1)
     while True:
         n = get_integer_input(f"Player {current_player}, Enter a number: ")
-        if check_square(n, coins):
+        if is_square(n, coins):
             break
         else:
             print("Invalid number, try again.")
 
     # Remove the Square of the Number from the Pile of Coins
-    coins = coins - n * n
+    coins = coins - n
 
     # Check if the Pile of Coins is Empty
     if coins == 0:
